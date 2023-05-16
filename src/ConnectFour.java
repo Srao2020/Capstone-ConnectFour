@@ -31,8 +31,6 @@ public class ConnectFour implements BoardGame {
                         player == board[row][col + 1] &&
                         player == board[row][col + 2] &&
                         player == board[row][col + 3]) {
-                    // Store winning positions
-                    winningPositions = new Position[4];
                     for (int i = 0; i < 4; i++) {
                         winningPositions[i] = new Position(row, col + i);
                     }
@@ -56,8 +54,6 @@ public class ConnectFour implements BoardGame {
                         player == board[rowStart + 1][col] &&
                         player == board[rowStart + 2][col] &&
                         player == board[rowStart + 3][col]) {
-                    // Store winning positions
-                    winningPositions = new Position[4];
                     for (int i = 0; i < 4; i++) {
                         winningPositions[i] = new Position(rowStart + i, col);
                     }
@@ -102,8 +98,6 @@ public class ConnectFour implements BoardGame {
                         player == board[row + 1][col + 1] &&
                         player == board[row + 2][col + 2] &&
                         player == board[row + 3][col + 3]) {
-                    // Store winning positions
-                    winningPositions = new Position[4];
                     for (int i = 0; i < 4; i++) {
                         winningPositions[i] = new Position(row + i, col + i);
                     }
@@ -120,8 +114,6 @@ public class ConnectFour implements BoardGame {
                         player == board[row + 1][col - 1] &&
                         player == board[row + 2][col - 2] &&
                         player == board[row + 3][col - 3]) {
-                    // Store winning positions
-                    winningPositions = new Position[4];
                     for (int i = 0; i < 4; i++) {
                         winningPositions[i] = new Position(row + i, col - i);
                     }
@@ -153,7 +145,7 @@ public class ConnectFour implements BoardGame {
      */
     @Override
     public Position[] getWinningPositions() {
-        return new Position[0];
+        return winningPositions;
     }
 
     public void newGame() {
@@ -172,7 +164,7 @@ public class ConnectFour implements BoardGame {
                 if (board[r][column] == 0) {
                     board[r][column] = currentPlayer;
                     currentPlayer = (currentPlayer == 1) ? 2 : 1;
-                    break;
+                    return;
                 }
             }
         }
