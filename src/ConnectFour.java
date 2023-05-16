@@ -122,6 +122,19 @@ public class ConnectFour implements BoardGame {
             }
         }
 
+        // Full Board
+        int count = 0;
+        for (int r = 0; r < board.length; r++) {
+            for (int c = 0; c < board[0].length; c++) {
+                if (board[r][c] != 0) {
+                    count++;
+                }
+                if (count == board.length*board[0].length) {
+                    return true;
+                }
+            }
+        }
+
         return false;
     }
 
