@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="05624588-a8bd-4789-9756-4d1b3931cfb1" name="Changes" comment="4">
+    <list default="true" id="05624588-a8bd-4789-9756-4d1b3931cfb1" name="Changes" comment="f2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ConnectFour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ConnectFour.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ConnectFourGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ConnectFourGUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Position.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Position.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +74,7 @@
       <workItem from="1683859752208" duration="633000" />
       <workItem from="1683903052640" duration="1523000" />
       <workItem from="1684239442218" duration="8935000" />
-      <workItem from="1684422089679" duration="318000" />
+      <workItem from="1684422089679" duration="2334000" />
     </task>
     <task id="LOCAL-00001" summary="q">
       <created>1684241747120</created>
@@ -113,7 +111,21 @@
       <option name="project" value="LOCAL" />
       <updated>1684243790085</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="f1">
+      <created>1684422585598</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1684422585598</updated>
+    </task>
+    <task id="LOCAL-00007" summary="f2">
+      <created>1684423516293</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1684423516293</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -136,9 +148,11 @@
     <MESSAGE value="2" />
     <MESSAGE value="3" />
     <MESSAGE value="4" />
-    <option name="LAST_COMMIT_MESSAGE" value="4" />
+    <MESSAGE value="f1" />
+    <MESSAGE value="f2" />
+    <option name="LAST_COMMIT_MESSAGE" value="f2" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Project06_01Connect_Four$ConnectFourGUI.ic" NAME="ConnectFourGUI Coverage Results" MODIFIED="1684421899192" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Project06_01Connect_Four$ConnectFourGUI.ic" NAME="ConnectFourGUI Coverage Results" MODIFIED="1684422707821" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

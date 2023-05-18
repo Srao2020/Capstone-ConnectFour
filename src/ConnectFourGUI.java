@@ -103,8 +103,9 @@ public class ConnectFourGUI extends JFrame implements ActionListener {
 									displayWinningRow();
 									timer.start();
 								}
-								else
+								else {
 									directionsLabel.setText("The game has ended in a draw.");
+								}
 							}
 						}
 					}
