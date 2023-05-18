@@ -145,6 +145,10 @@ public class ConnectFour implements BoardGame {
                     count++;
                 }
                 if (count == board.length*board[0].length) {
+                    winningPositions[0] = new Position(-1, -1);
+                    /*for (int i = 0; i < 4; i++) {
+                        winningPositions[i] = new Position(-1, -1);
+                    }*/
                     return true;
                 }
             }
