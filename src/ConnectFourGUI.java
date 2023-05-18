@@ -99,7 +99,7 @@ public class ConnectFourGUI extends JFrame implements ActionListener {
 							refreshBoard(game.getBoard());
 							if(game.gameOver())	{
 								if(!game.getWinningPositions()[0].equals(new Position(-1, -1)))	{
-									directionsLabel.setText("Player " + game.getWinner() + " has won the game!");
+								  	directionsLabel.setText("Player " + game.getWinner() + " has won the game!");
 									displayWinningRow();
 									timer.start();
 								}

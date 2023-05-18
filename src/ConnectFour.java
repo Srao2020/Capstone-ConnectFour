@@ -1,19 +1,34 @@
+/**
+ * The ConnectFour class represents the game Connect Four, which implements the BoardGame interface.
+ * @author Srao2020
+ * @version 05/25/2023
+ */
 public class ConnectFour implements BoardGame {
     private int[][] board;
     private int currentPlayer;
     private Position[] winningPositions;
     private int winner;
 
+    /**
+     * Constructs a new ConnectFour object and starts a new game.
+     */
     public ConnectFour() {
         newGame();
     }
 
+    /**
+     * Gets the current player.
+     * @return the current player (1 for the first player, 2 for the second player).
+     */
     //Getter/Setter
     public int getCurrentPlayer() {
         return currentPlayer;
     }
 
-
+    /**
+     * Checks if the game is over.
+     * @return true if the game is over, false otherwise.
+     */
     public boolean gameOver() {
         //HORIZONTAL
         /*for (int r = 0; r < board.length; r++) {
@@ -161,16 +176,28 @@ public class ConnectFour implements BoardGame {
         return winningPositions;
     }
 
+    /**
+     * Creates a new game by initializing the game board, determining the current player, and creating an array for winning positions.
+     */
     public void newGame() {
         board = new int[6][7];
         currentPlayer = 1+(int)(Math.random()*2);
         winningPositions = new Position[4];
     }
 
+    /**
+     * Checks if a specific column on the game board is full.
+     * @param column the column number
+     * @return true if the column is full, false otherwise.
+     */
     public boolean columnFull(int column) {
         return board[0][column] != 0;
     }
 
+    /**
+     * Plays a move in the specified column on the game board.
+     * @param column The column index to play the move in.
+     */
     public void play(int column) {
         if(!columnFull(column)) {
             for (int r = 5; r >=0; r--) {
